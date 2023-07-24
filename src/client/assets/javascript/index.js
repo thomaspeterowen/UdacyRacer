@@ -324,6 +324,11 @@ function getTracks() {
 	// GET request to `${SERVER}/api/tracks`
 }
 
+fetch(`${SERVER}/api/cars`)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
 function getRacers() {
 	// GET request to `${SERVER}/api/cars`
 }
